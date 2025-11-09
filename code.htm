@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Property Demonstration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* ---------- TYPOGRAPHY ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  font-style: italic;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.typography .text-demo {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.typography span {
+  text-decoration: underline;
+  color: #0077cc;
+}
+
+/* ---------- BOX MODEL ---------- */
+.box-model .box {
+  width: 300px;
+  min-width: 200px;
+  max-width: 400px;
+  height: 150px;
+  margin: 2rem auto;
+  padding: 20px;
+  border: 3px solid #0077cc;
+  border-radius: 10px;
+  outline: 2px dashed #aaa;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background-color: #fff;
+  text-align: center;
+}
+
+/* ---------- BACKGROUND ---------- */
+.background .bg-demo {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url('https://picsum.photos/800/400');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-blend-mode: overlay;
+  color: white;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 15px;
+}
+
+/* ---------- LAYOUT ---------- */
+.layout-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 2rem;
+  overflow: auto;
+}
+
+.layout-container .item {
+  background-color: #2575fc;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+/* Float and visibility demo */
+.item:nth-child(2) {
+  float: right;
+  visibility: visible;
+  clear: both;
+}
+
+</style>
+<body>
+  <header class="hero-section">
+    <h1 class="title">CSS Property Showcase</h1>
+    <p class="subtitle">Explore typography, box model, background, and layout properties.</p>
+  </header>
+
+  <main>
+    <section class="typography">
+      <h2>Typography</h2>
+      <p class="text-demo">
+        This text demonstrates various <span>typographic</span> styles including font, weight, spacing, and alignment.
+      </p>
+    </section>
+
+    <section class="box-model">
+      <h2>Box Model</h2>
+      <div class="box">I am a box with padding, border, margin, and shadows!</div>
+    </section>
+
+    <section class="background">
+      <h2>Background</h2>
+      <div class="bg-demo">
+        <p>Gradient, image, and blending applied here.</p>
+      </div>
+    </section>
+
+    <section class="layout">
+      <h2>Layout</h2>
+      <div class="layout-container">
+        <div class="item">Flex Item 1</div>
+        <div class="item">Flex Item 2</div>
+        <div class="item">Flex Item 3</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
